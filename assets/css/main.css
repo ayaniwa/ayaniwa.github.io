@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	-webkit-text-size-adjust: 100%;
 }
 
 ol, ul {
@@ -2195,16 +2196,14 @@ ul {
 						height: 20em;
 					}
 
-					#main > .panel.intro header {
-						padding: 2.75em 2em 2.5em 2em;
-					}
+
 
 						#main > .panel.intro header p {
 							font-size: 1em;
 							margin: 0.25em 0 0 0;
 						}
 					#main > .panel.intro  {
-						padding: 2.75em 2em 2.5em 2em;
+						padding: 2.75em 2em 2.5em 4em;
 					}
 
 						#main > .panel.intro  p {
