@@ -169,7 +169,7 @@ a:hover {
     display: block;
     padding-top: 55px;
     clear: both;
-    margin-left: 4px;
+    margin-left: 38px;
 }
 
 h1 {
@@ -1072,6 +1072,13 @@ button.xlarge,
 
 @media screen and (max-width: 479px) {
     /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    #wrapper {
+        width: 479px;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+
     .wrapper-mid {
         width: 479px;
         margin: 0 auto;
