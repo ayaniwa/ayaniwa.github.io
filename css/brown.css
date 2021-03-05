@@ -100,14 +100,12 @@ a:hover {
     width: 969px;
     height: 19px;
     margin: 0 auto;
-    /*background-image:url(../images/btop.jpg);*/
     background-color: #ffffff;
 }
 
 .wrapper-mid {
     width: 969px;
     margin: 0 auto;
-    /*background-image:url(../images/bmid.jpg);*/
     background-color: #ffffff;
     padding-bottom: 40px;
 }
@@ -117,7 +115,6 @@ a:hover {
     height: 22px;
     padding: 0;
     margin: 0 auto;
-    /*background-image:url(../images/bbottom.jpg);*/
     background-color: #ffffff;
 }
 
@@ -458,21 +455,21 @@ ul.works li img:hover {
     padding-top: 10px;
 }
 
-.self ul li.ad {
-    background-image: url(../images/icn-ad.gif);
-}
+/*.self ul li.ad {*/
+/*    background-image: url(../images/icn-ad.gif);*/
+/*}*/
 
-.self ul li.mail {
-    background-image: url(../images/icn-mail.gif);
-}
+/*.self ul li.mail {*/
+/*    background-image: url(../images/icn-mail.gif);*/
+/*}*/
 
-.self ul li.tel {
-    background-image: url(../images/icn-tel.gif);
-}
+/*.self ul li.tel {*/
+/*    background-image: url(../images/icn-tel.gif);*/
+/*}*/
 
-.self ul li.web {
-    background-image: url(../images/icn-web.gif);
-}
+/*.self ul li.web {*/
+/*    background-image: url(../images/icn-web.gif);*/
+/*}*/
 
 .self ul li {
     background-repeat: no-repeat;
@@ -486,10 +483,11 @@ ul.works li img:hover {
 /* SOCIAL ICONS */
 /* ----------------------------------------- */
 .clear_text {
-	color: initial;
-	font-size: initial;
-	text-shadow: initial;
+    color: initial;
+    font-size: initial;
+    text-shadow: initial;
 }
+
 .social {
     width: 135px;
     float: right;
@@ -516,7 +514,7 @@ ul.works li img:hover {
     padding: 5px;
     font-size: 10px;
     background-repeat: no-repeat;
-    background-image: url(../images/tipsy.gif);
+    /*background-image: url(../images/tipsy.gif);*/
 }
 
 .tipsy-inner {
@@ -913,7 +911,7 @@ textarea:focus {
 }
 
 .submit-button {
-    background: transparent url(../images/submit.jpg) no-repeat 0 0;
+    /*background: transparent url(../images/submit.jpg) no-repeat 0 0;*/
     display: block;
     clear: both;
     width: 90px;
@@ -928,7 +926,7 @@ textarea:focus {
 }
 
 .submit-button:hover {
-    background: transparent url(../images/submit.jpg) no-repeat 0 -33px;
+    /*background: transparent url(../images/submit.jpg) no-repeat 0 -33px;*/
     outline: 0;
     border: none;
 }
@@ -1068,6 +1066,17 @@ button.xlarge,
     .button {
         text-align: center;
         width: 60pt;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+    /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    .wrapper-mid {
+        width: 479px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding-bottom: 40px;
     }
 
 }
