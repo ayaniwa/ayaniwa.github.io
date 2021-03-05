@@ -1072,18 +1072,19 @@ button.xlarge,
 
 @media screen and (max-width: 479px) {
     /*ウィンドウ幅が最大479pxまでの場合に適用*/
-    #wrapper {
-        width: 479px;
-        margin: 0 auto;
-        margin-top: 60px;
-        margin-bottom: 100px;
-    }
 
-    .wrapper-mid {
-        width: 479px;
-        margin: 0 auto;
-        background-color: #ffffff;
-        padding-bottom: 40px;
-    }
+    /*#wrapper {*/
+    /*    max-width: 479px;*/
+    /*    margin: 0 auto;*/
+    /*    margin-top: 60px;*/
+    /*    margin-bottom: 100px;*/
+    /*}*/
+
+    /*.wrapper-mid {*/
+    /*    max-width: 479px;*/
+    /*    margin: 0 auto;*/
+    /*    background-color: #ffffff;*/
+    /*    padding-bottom: 40px;*/
+    /*}*/
 
 }
