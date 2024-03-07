@@ -1,132 +1,113 @@
 /*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
+	Read Only by HTML5 UP
+	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-function copyToClipboard() {
-    var copyTarget = document.getElementById("copyTarget");
-    var rng = document.createRange();
-    rng.selectNodeContents(copyTarget);
-    window.getSelection().addRange(rng);
-    document.execCommand("Copy");
-    console.log(rng.cloneContents().textContent);
-}
 
-(function ($) {
-    var $window = $(window),
-        $body = $('body'),
-        $main = $('#main');
+(function($) {
 
-    // Breakpoints.
-    breakpoints({
-        xlarge: ['1281px', '1680px'],
-        large: ['981px', '1280px'],
-        medium: ['737px', '980px'],
-        small: ['481px', '736px'],
-        xsmall: ['361px', '480px'],
-        xxsmall: [null, '360px']
-    });
+	skel.breakpoints({
+		xlarge: '(max-width: 1680px)',
+		large: '(max-width: 1280px)',
+		medium: '(max-width: 1024px)',
+		small: '(max-width: 736px)',
+		xsmall: '(max-width: 480px)'
+	});
 
-    // Play initial animations on page load.
-    $window.on('load', function () {
-        window.setTimeout(function () {
-            $body.removeClass('is-preload');
-        }, 100);
-    });
+	$(function() {
 
-    // Nav.
-    var $nav = $('#nav');
+		var $body = $('body'),
+			$header = $('#header'),
+			$nav = $('#nav'), $nav_a = $nav.find('a'),
+			$wrapper = $('#wrapper');
 
-    if ($nav.length > 0) {
+		// Fix: Placeholder polyfill.
+			$('form').placeholder();
 
-        // Shrink effect.
-        $main
-            .scrollex({
-                mode: 'top',
-                enter: function () {
-                    $nav.addClass('alt');
-                },
-                leave: function () {
-                    $nav.removeClass('alt');
-                },
-            });
+		// Prioritize "important" elements on medium.
+			skel.on('+medium -medium', function() {
+				$.prioritize(
+					'.important\\28 medium\\29',
+					skel.breakpoint('medium').active
+				);
+			});
 
-        // Links.
-        var $nav_a = $nav.find('a');
+		// Header.
+			var ids = [];
 
-        $nav_a
-            .scrolly({
-                speed: 1000,
-                offset: function () {
-                    return $nav.height();
-                }
-            })
-            .on('click', function () {
+			// Set up nav items.
+				$nav_a
+					.scrolly({ offset: 44 })
+					.on('click', function(event) {
 
-                var $this = $(this);
+						var $this = $(this),
+							href = $this.attr('href');
 
-                // External link? Bail.
-                if ($this.attr('href').charAt(0) != '#')
-                    return;
+						// Not an internal link? Bail.
+							if (href.charAt(0) != '#')
+								return;
 
-                // Deactivate all links.
-                $nav_a
-                    .removeClass('active')
-                    .removeClass('active-locked');
+						// Prevent default behavior.
+							event.preventDefault();
 
-                // Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
-                $this
-                    .addClass('active')
-                    .addClass('active-locked');
+						// Remove active class from all links and mark them as locked (so scrollzer leaves them alone).
+							$nav_a
+								.removeClass('active')
+								.addClass('scrollzer-locked');
 
-            })
-            .each(function () {
+						// Set active class on this link.
+							$this.addClass('active');
 
-                var $this = $(this),
-                    id = $this.attr('href'),
-                    $section = $(id);
+					})
+					.each(function() {
 
-                // No section for this link? Bail.
-                if ($section.length < 1)
-                    return;
+						var $this = $(this),
+							href = $this.attr('href'),
+							id;
 
-                // Scrollex.
-                $section.scrollex({
-                    mode: 'middle',
-                    initialize: function () {
+						// Not an internal link? Bail.
+							if (href.charAt(0) != '#')
+								return;
 
-                        // Deactivate section.
-                        if (browser.canUse('transition'))
-                            $section.addClass('inactive');
+						// Add to scrollzer ID list.
+							id = href.substring(1);
+							$this.attr('id', id + '-link');
+							ids.push(id);
 
-                    },
-                    enter: function () {
+					});
 
-                        // Activate section.
-                        $section.removeClass('inactive');
+			// Initialize scrollzer.
+				$.scrollzer(ids, { pad: 300, lastHack: true });
 
-                        // No locked links? Deactivate all links and activate this section's one.
-                        if ($nav_a.filter('.active-locked').length == 0) {
+		// Off-Canvas Navigation.
 
-                            $nav_a.removeClass('active');
-                            $this.addClass('active');
+			// Title Bar.
+				$(
+					'<div id="titleBar">' +
+						'<a href="#header" class="toggle"></a>' +
+						'<span class="title">' + $('#logo').html() + '</span>' +
+					'</div>'
+				)
+					.appendTo($body);
 
-                        }
+			// Header.
+				$('#header')
+					.panel({
+						delay: 500,
+						hideOnClick: true,
+						hideOnSwipe: true,
+						resetScroll: true,
+						resetForms: true,
+						side: 'right',
+						target: $body,
+						visibleClass: 'header-visible'
+					});
 
-                        // Otherwise, if this section's link is the one that's locked, unlock it.
-                        else if ($this.hasClass('active-locked'))
-                            $this.removeClass('active-locked');
+			// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).
+				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
+					$('#titleBar, #header, #wrapper')
+						.css('transition', 'none');
 
-                    }
-                });
-
-            });
-
-    }
-
-    // Scrolly.
-    $('.scrolly').scrolly({
-        speed: 1000
-    });
+	});
 
 })(jQuery);
