@@ -3051,6 +3051,7 @@
 
 	}
 
+
 .custom-list {
   width: 100%;
 }
@@ -3062,14 +3063,23 @@
 }
 
 .year {
-  width: 150px; /* 年度表示のための十分な幅を設定 */
+  width: 150px;
   font-weight: bold;
   text-align: left;
-  margin-right: 20px; /* 年度と会社名の間に間隔を設定 */
+  margin-right: 20px;
 }
 
 .company {
-  flex-grow: 1; /* 会社名が残りのスペースを埋めるように設定 */
+  flex-grow: 1;
+  white-space: nowrap; /* 会社名が長い場合の改行を防ぐ */
+  overflow: hidden; /* はみ出たテキストを非表示に */
+  text-overflow: ellipsis; /* はみ出たテキストの末尾を省略記号で表示 */
+}
+
+@media screen and (max-width: 600px) {
+  .year {
+    width: 100px; /* 画面が小さい時はyearの幅を小さくする */
+  }
 }
 
 .copy-btn .fas {
