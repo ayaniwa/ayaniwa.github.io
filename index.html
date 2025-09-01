@@ -1,938 +1,415 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-<title>Ayana Niwa/丹羽彩奈</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta charset="utf-8"/>
-    <meta name="author" content="Ayana Niwa">
-    <meta property="og:type" content="website"/>
-    <meta property="og:locale" content="ja_JP"/>
-    <meta property="og:site_name" content="Homepage of Ayana Niwa"/>
-    <meta property="og:title" content="Homepage of Ayana Niwa"/>
-    <meta property="og:description"
-          content="This is the homepage of Ayana Niwa.">
-    <meta property="og:url" content="https://ayaniwa.github.io/"/>
-    <meta property="og:image" content="https://ayaniwa.github.io/images/me.jpg"/>
-    <meta name="twitter:site" content="@ayaniwa1213"/>
-    <meta name="twitter:card" content="summary"/>
-<!--    <i style="font-family: 'FontAwesomeSolid';"></i> &lt;!&ndash; Unicode for a specific icon &ndash;&gt;-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Ayana Niwa / 丹羽彩奈 — NLP Researcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="author" content="Ayana Niwa" />
+  <meta name="description" content="Homepage of Ayana Niwa (丹羽彩奈), NLP researcher. Publications, talks, committees, CV, and contact." />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:site_name" content="Homepage of Ayana Niwa" />
+  <meta property="og:title" content="Homepage of Ayana Niwa" />
+  <meta property="og:description" content="Homepage of Ayana Niwa (丹羽彩奈), NLP researcher. Publications, talks, committees, CV, and contact." />
+  <meta property="og:url" content="https://ayaniwa.github.io/" />
+  <meta property="og:image" content="https://ayaniwa.github.io/images/me.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ayaniwa1213" />
+  <link rel="canonical" href="https://ayaniwa.github.io/" />
 
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-	</head>
-	<body>
+  <!-- Styles -->
+  <link rel="preload" as="image" href="images/me.png" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/me.png" alt=""/></span>
-        <h1 id="logo"><a href="#">Ayana Niwa</a></h1>
-        <p>Ph.D. in Engineering / NLP Researcher</p>
-				</header>
-                <ul class="icons">
-        <li style="position: relative;">
-    <div id="copy-message" style="display: none; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);">Copied!</div>
-    <a href="javascript:void(0);" id="copy-email" class="icon solid fa-envelope">
-        <span class="label">Email</span>
-    </a>
-</li>
-        <li><a href="https://twitter.com/ayaniwa1213" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
-        </li>
-        <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-        <li><a href="https://speakerdeck.com/ayaniwa" class="icon brands fa-speaker-deck"><span
-                class="label">SpeakerDeck</span></a></li>
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ayana Niwa",
+    "alternateName": "丹羽 彩奈",
+    "jobTitle": "NLP Researcher",
+    "url": "https://ayaniwa.github.io/",
+    "image": "https://ayaniwa.github.io/images/me.jpg",
+    "affiliation": [
+      {"@type":"Organization","name":"MBZUAI"},
+      {"@type":"Organization","name":"RIKEN AIP"}
+    ],
+    "sameAs": [
+      "https://twitter.com/ayaniwa1213",
+      "https://speakerdeck.com/ayaniwa"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header -->
+  <section id="header" aria-label="Site header">
+    <header>
+      <span class="image avatar"><img src="images/me.png" width="128" height="128" alt="Portrait of Ayana Niwa" /></span>
+      <h1 id="logo"><a href="#main">Ayana Niwa</a></h1>
+      <p>Ph.D. in Engineering / NLP Researcher</p>
+    </header>
+
+    <ul class="icons" aria-label="Social links">
+      <li>
+        <a href="javascript:void(0);" id="copy-email" class="icon solid fa-envelope">          
+            <span class="label">Email</span>
+            </a> 
+      </li>
+        <li><a href="https://twitter.com/ayaniwa1213" class="icon brands fa-twitter"><span class="label">Twitter</span></a> </li>      
+        <li><a href="https://github.com/ayaniwa" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+      <li><a href="https://speakerdeck.com/ayaniwa" class="icon brands fa-speaker-deck" target="_blank" rel="noopener noreferrer"><span class="label">Speaker Deck</span></a></li>
     </ul>
-				<nav id="nav">
-        <ul>
-            <!--            <li><a href="#one" class="active">About</a></li>-->
-            <li><a href="#two">Work Experience</a></li>
-            <li><a href="#three">Publication</a></li>
-            <li><a href="#four">Education</a></li>
-            <li><a href="#five">Talk</a></li>
-            <li><a href="#six">Committee</a></li>
-            <li><a href="#seven">Others</a></li>
+
+    <nav id="nav" aria-label="Section navigation">
+      <ul>
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#experience">Work Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#committee">Committee</a></li>
+        <li><a href="#other">Others</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+    <main id="main">
+
+      <!-- About -->
+      <section id="about" aria-labelledby="about-title">
+        <div class="container">
+          <header class="major">
+            <h2 id="about-title">Ayana Niwa</h2>
+            <h3>Postdoctoral Researcher at MBZUAI</h3>
+          </header>
+          <p>My CV can be found <a href="files/cv_latest.pdf">here</a> <small>(last updated: Oct. 16, 2024)</small>.</p>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <h3 id="experience-title">Work Experience</h3>
+          <div class="custom-list">
+            <div class="item">
+              <div class="year">2025/05 – present</div>
+              <div class="company">
+                <strong><a href="https://www.riken.jp/en/research/labs/aip/goalorient_tech/nat_lang_understand/">NLU Team</a>, <a href="https://www.riken.jp/en/research/labs/aip/">RIKEN Center for Advanced Intelligence Project</a></strong><br />
+                <em>Visiting Scientist</em>
+              </div>
+            </div>
+            <div class="item">
+              <div class="year">2024/10 – present</div>
+              <div class="company">
+                <strong><a href="https://www.mint-nlp-mbzuai.com">Kentaro Team</a>, <a href="https://mbzuai.ac.ae/">MBZUAI</a></strong><br />
+                <em>Researcher</em>
+              </div>
+            </div>
+            <div class="item">
+              <div class="year">2023/04 – 2024/09</div>
+              <div class="company"><strong><a href="https://megagon.ai/">Megagon Labs</a></strong><br /><em>Research Scientist</em></div>
+            </div>
+            <div class="item">
+              <div class="year">2023/06 – 2024/09</div>
+              <div class="company"><strong><a href="https://www.nlp.c.titech.ac.jp/index.en.html">Okazaki Lab, Tokyo Institute of Technology</a></strong><br /><em>Part‑time Researcher</em></div>
+            </div>
+            <div class="item">
+              <div class="year">2021/04 – 2023/03</div>
+              <div class="company"><strong><a href="https://www.jsps.go.jp/english/e-pd/">JSPS Research Fellowships for Young Scientists (DC2)</a></strong><br /><em>JSPS Research Fellow</em></div>
+            </div>
+            <div class="item">
+              <div class="year">2019/06 – 2023/03</div>
+              <div class="company"><strong><a href="https://megagon.ai/">Megagon Labs</a></strong><br /><em>Research Intern</em></div>
+            </div>
+            <div class="item">
+              <div class="year">2018/10 – 2023/03</div>
+              <div class="company"><strong><a href="https://www.cyberagent.co.jp/">CyberAgent, Inc.</a></strong><br /><em>Collaborative Project</em></div>
+            </div>
+            <div class="item">
+              <div class="year">2018/10 – 2023/03</div>
+              <div class="company"><strong><a href="https://www.titech.ac.jp/english">Tokyo Institute of Technology</a></strong><br /><em>Research Assistant</em></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications" aria-labelledby="pubs-title">
+        <div class="container">
+          <h3 id="pubs-title">Publications</h3>
+
+          <h5>Journal (Refereed)</h5>
+          <ul class="info">
+            <li>
+              <u>Ayana Niwa</u>, Sho Takase, Naoaki Okazaki. <strong>Nearest Neighbor Non‑autoregressive Text Generation</strong>. <em>Journal of Information Processing</em>, 2023. <a href="https://www.jstage.jst.go.jp/article/ipsjjip/31/0/31_344/_article/-char/en/" class="icon solid fa-globe" aria-label="Journal link" target="_blank" rel="noopener"></a>
+            </li>
+            <li>
+              <u>Ayana Niwa</u>, Naoaki Okazaki, Kohei Wakimoto, Keisuke Nishiguchi, Masataka Mouri. <strong>Construction of a Corpus of Rhetorical Devices in Slogans and Structural Analysis of Antitheses</strong>. <em>ACM Transactions on Asian and Low‑Resource Language Information Processing (TALLIP)</em>, 2021. <a href="https://dl.acm.org/doi/10.1145/3465218" class="icon solid fa-globe" aria-label="ACM link" target="_blank" rel="noopener"></a>
+            </li>
+          </ul>
+
+          <h5>International Conference (Refereed)</h5>
+          <ul class="info">
+            <li>
+              <u>Ayana Niwa</u>, Masahiro Kaneko, Kentaro Inui. <strong>Rectifying Belief Space via Unlearning to Harness LLMs' Reasoning</strong>. <em>ACL 2025 Findings</em>, 2025. <a href="https://arxiv.org/abs/2502.20620" class="icon solid fa-globe" target="_blank" rel="noopener" aria-label="arXiv link"></a>
+            </li>
+            <li>
+              <u>Ayana Niwa</u>, Hayate Iso. <strong>AmbigNLG: Addressing Task Ambiguity in Instruction for NLG</strong>. <em>EMNLP 2024</em>, 2024.
+            </li>
+            <li>
+              Masahiro Kaneko, Sho Takase, <u>Ayana Niwa</u>, Naoaki Okazaki. <strong>Interpretability for Language Learners Using Example‑Based Grammatical Error Correction</strong>. <em>ACL 2022</em>. <a href="https://aclanthology.org/2022.acl-long.496/" class="icon solid fa-globe" target="_blank" rel="noopener" aria-label="ACL Anthology link"></a>
+            </li>
+            <li>
+              <u>Ayana Niwa</u>, Keisuke Nishiguchi, Naoaki Okazaki. <strong>Predicting Antonyms in Context using BERT</strong>. <em>INLG 2021</em>. <a href="https://aclanthology.org/2021.inlg-1.6/" class="icon solid fa-globe" target="_blank" rel="noopener" aria-label="ACL Anthology link"></a>
+            </li>
+          </ul>
+
+          <h5>Article</h5>
+          <ul class="info">
+            <li>
+              <u>Ayana Niwa</u>, Sho Yokoi, Junya Takayama, Itsumi Saito. <strong>NLP Colloquium</strong>. <em>Journal of Natural Language Processing</em>, 2024. <a href="https://www.jstage.jst.go.jp/article/jnlp/31/1/31_300/_article/-char/en" class="icon solid fa-file-pdf" target="_blank" rel="noopener" aria-label="Paper PDF"></a>
+            </li>
+          </ul>
+
+          <h5>Domestic Conference and Symposium (Unrefereed)</h5>
+          <ul class="info">
+            <!-- Keeping original list; minor copy‑edits and consistent punctuation -->
+            <li>
+              <u>Ayana Niwa</u>, Hayate Iso. <strong>Addressing Ambiguity in Instruction for NLG</strong>. <em>NLP 2024</em>, Hyogo, Japan (in Japanese). <a href="https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/A7-6.pdf" class="icon solid fa-file-pdf" target="_blank" rel="noopener" aria-label="Paper PDF"></a>
+            </li>
+            <li>
+              <u>Ayana Niwa</u>, Naoaki Okazaki. <strong>An Investigation of Effectiveness of the Nearest Neighbor Distribution in T5 Model</strong>. <em>NLP 2023</em>, Okinawa (in Japanese). <a href="https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/P12-6.pdf" class="icon solid fa-file-pdf" target="_blank" rel="noopener" aria-label="Paper PDF"></a>
+            </li>
+            <li>
+              Daisuke Taniguchi, Kohei Wakimoto, <u>Ayana Niwa</u>, Naoaki Okazaki. <strong>An Investigation of the Directional Dependency of Text Generation in Large Language Models</strong>. <em>NLP 2023</em>, Okinawa (in Japanese). <a href="https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/H9-1.pdf" class="icon solid fa-file-pdf" target="_blank" rel="noopener" aria-label="Paper PDF"></a>
+            </li>
+            <li>
+              Daisuke Taniguchi, Kohei Wakimoto, Kazuya Kuroda, Shunyo Kawamoto, Keisuke Nishiguchi, <u>Ayana Niwa</u>, Naoaki Okazaki. <strong>Advertisement text creation support using product reviews and features</strong>. <em>JSAI 2023</em> (in Japanese). <a href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2022/0/JSAI2022_3Yin207/_article/-char/ja/" class="icon solid fa-globe" target="_blank" rel="noopener" aria-label="Paper URL"></a>
+            </li>
+            <li>
+              <u>Ayana Niwa</u>, Sho Takase, Naoaki Okazaki. <strong>Non‑autoregressive Generation using the Nearest Neighbor</strong>. <em>NLP 2022</em> (in Japanese). <a href="https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/C6-3.pdf" class="icon solid fa-file-pdf" target="_blank" rel="noopener" aria-label="Paper PDF"></a>
+            </li>
+            <li>
+              Ryogo Ishikawa, <u>Ayana Niwa</u>, Mizuki Sakae, Naoaki Okazaki. <strong>Robust Dependency Parsing for the Omission of a Post‑positional Particle using Pseudo Training Data</strong>. <em>NLP 2022</em> (in Japanese). <a href="https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/B7-1.pdf" class="icon solid fa-file-pdf" target="_blank" rel="noopener" aria-label="Paper PDF"></a>
+            </li>
+            <li>
+              <u>Ayana Niwa</u>, Hiroshi Matsuda. <strong>A Study for Sentiment Analysis Accepting the Diversity of Emotion Sensitivities</strong>. <em>JSAI 2021</em> (in Japanese). <a href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2021/0/JSAI2021_2Yin506/_article/-char/ja/" class="icon solid fa-file-pdf" target="_blank" rel="noopener" aria-label="Paper PDF"></a>
+            </li>
+            <li>
+              <u>Ayana Niwa</u>, Keisuke Nishiguchi, Naoaki Okazaki. <strong>Antonym Filling Task in Context using BERT</strong>. <em>NLP 2021</em> (in Japanese). <a href="https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/C9-1.pdf" class="icon solid fa-file-pdf" target="_blank" rel="noopener" aria-label="Paper PDF"></a>
+            </li>
+            <li>
+              <u>Natsumi Nobori</u>, Tatsuya Hiraoka, <u>Ayana Niwa</u>, Keisuke Nishiguchi, Naoaki Okazaki. <strong>Advertisement Slogan Generation Considering Company Information</strong>. <em>NLP 2021</em> (in Japanese). <a href="https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/B3-3.pdf" class="icon solid fa-file-pdf" target="_blank" rel="noopener" aria-label="Paper PDF"></a>
+            </li>
+            <li>
+              <u>Ayana Niwa</u>, Keisuke Nishiguchi, Naoaki Okazaki. <strong>Advertising Slogan Generation with Antitheses by using Masked Language Models</strong>. <em>YANS 2020</em> (in Japanese).
+            </li>
+            <li>
+              <u>Natsumi Nobori</u>, Tatsuya Hiraoka, <u>Ayana Niwa</u>, Keisuke Nishiguchi, Naoaki Okazaki. <strong>Advertisement Slogan Generation Considering Company Information</strong>. <em>YANS 2020</em> (in Japanese).
+            </li>
+            <li>
+              <u>Ayana Niwa</u>, Kohei Wakimoto, Keisuke Nishiguchi, Masataka Mouri, Naoaki Okazaki. <strong>Structural Analysis of Antitheses in Slogan using Span Candidate Refinement with Word Correspondence</strong>. <em>JSAI 2020</em> (online; in Japanese). <a href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2020/0/JSAI2020_1E5GS901/_article/-char/ja" class="icon solid fa-globe" target="_blank" rel="noopener" aria-label="URL"></a>
+            </li>
+            <li>
+              <u>Ayana Niwa</u>, Kohei Wakimoto, Keisuke Nishiguchi, Masataka Mouri, Naoaki Okazaki. <strong>Structural Analysis of Antitheses in Advertising Slogans</strong>. <em>NLP 2020</em> (online; in Japanese). <a href="https://www.anlp.jp/proceedings/annual_meeting/2020/pdf_dir/D3-4.pdf" class="icon solid fa-file-pdf" target="_blank" rel="noopener" aria-label="Paper PDF"></a>
+            </li>
+            <li>
+              <u>Ayana Niwa</u>, Naoaki Okazaki, Keisuke Nishiguchi, Chihiro Kameyama, Masataka Mouri. <strong>A Study Toward Automatic Advertising Slogan Generation Considering Rhetorical Devices</strong>. <em>YANS 2019</em> (in Japanese). <a href="https://drive.google.com/file/d/1XYbNdfoMwb0DfTVQNvDCa4Q4HTI4k1ow/view" class="icon solid fa-file-pdf" target="_blank" rel="noopener" aria-label="Poster"></a>
+            </li>
+            <li>
+              <u>Ayana Niwa</u>, Naoaki Okazaki, Keisuke Nishiguchi, Chihiro Kameyama, Masataka Mouri. <strong>Analysis Toward Automatic Generation of Advertising Slogans</strong>. <em>NLP 2019</em> (in Japanese). <a href="https://www.anlp.jp/proceedings/annual_meeting/2019/pdf_dir/P3-12.pdf" class="icon solid fa-file-pdf" target="_blank" rel="noopener" aria-label="Paper PDF"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" aria-labelledby="education-title">
+        <div class="container">
+          <h3 id="education-title">Education</h3>
+          <div class="item">
+            <div class="year">2020/04 – 2023/03</div>
+            <div class="company">Ph.D. in Engineering, Tokyo Institute of Technology<br />
+              <em>Adviser: <a href="http://www.chokkan.org/index.en.html">Prof. Naoaki Okazaki</a></em>
+            </div>
+          </div>
+          <div class="item">
+            <div class="year">2018/04 – 2020/03</div>
+            <div class="company">Master of Engineering, Tokyo Institute of Technology<br />
+              <em>Adviser: <a href="http://www.chokkan.org/index.en.html">Prof. Naoaki Okazaki</a></em>
+            </div>
+          </div>
+          <div class="item">
+            <div class="year">2014/04 – 2018/03</div>
+            <div class="company">Bachelor of Science and Technology, Sophia University (Japan)<br />
+              <em>Adviser: <a href="http://pweb.cc.sophia.ac.jp/irohara/index-e.html">Prof. Takashi Irohara</a></em>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Talks -->
+      <section id="talks" aria-labelledby="talks-title">
+        <div class="container">
+          <h3 id="talks-title">Talks</h3>
+          <ul>
+            <li>“A Quick Overview to Unlock the Potential of LLMs through Prompt Engineering.” Guest talk at <a href="https://tokyoai.connpass.com/event/326265/">Advanced Natural Language Processing (NLP)</a> by <a href="https://drive.google.com/drive/folders/10GmxjIEBugB8ymZ0qDBINL76tCWiYgRM">Tokyo AI</a>. (2024/08) <a href="https://speakerdeck.com/ayaniwa/a-quick-overview-to-unlock-the-potential-of-llms-through-prompt-engineering" class="icon brands fa-speaker-deck" target="_blank" rel="noopener" aria-label="Slides"></a></li>
+            <li>“The Frontiers of Mathematics, Information, and AI.” Guest talk at <a href="https://aip.riken.jp/event-list/surijohoai-female-students-seminar/?lang=ja">online seminar for middle and high‑school female students</a> by <a href="https://www.riken.jp/en/research/labs/aip/index.html">RIKEN AIP</a>. (2022/11) <a href="https://www.youtube.com/watch?v=63nROMDfLl4&list=PLaEuBnOE7AzMGX9JsWsICQXEjr1sFnJIm&index=6" class="icon brands fa-youtube" target="_blank" rel="noopener" aria-label="YouTube"></a></li>
+            <li>“Career Path as a Female Researcher.” Guest talk at <a href="https://neuripsmeetup.jp/2021/">NeurIPS Meetup Japan 2021, WiML</a>. (2021/12)</li>
+            <li>“Derivation and Use of Templates in Natural Language Generation.” Invited talk at <a href="https://www.ai-gakkai.or.jp/sigconf2021/2021siginvitedtalks/">SIG‑FPAI</a>. (2021/11) <a href="https://www.jstage.jst.go.jp/article/jsaifpai/118/0/118_03/_article/-char/ja/" class="icon solid fa-book-open" target="_blank" rel="noopener" aria-label="Info"></a></li>
+            <li>“Trends in Natural Language Processing at NeurIPS 2019.” Invited talk at <a href="https://www.ai-gakkai.or.jp/no78_jsai_seminar/">The 78th AI Seminar by JSAI</a>. (2020/03) <a href="https://speakerdeck.com/ayaniwa/trends-in-natural-language-processing-at-neurips-2019" class="icon brands fa-speaker-deck" target="_blank" rel="noopener" aria-label="Slides"></a></li>
+            <li>“A Smart Computer that Understands Language.” Visiting lecture at Jissen Gakuen Senior High School. (2019/11)</li>
+            <li>“Natural Language Processing.” Visiting lecture at Denenchofu High School. (2019/06)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Committee -->
+      <section id="committee" aria-labelledby="committee-title">
+        <div class="container">
+          <h3 id="committee-title">Committee</h3>
+          <ul>
+            <li><a href="https://sites.google.com/sig-nl.ipsj.or.jp/sig-nl/home">SIG‑NL</a> Committee (2025/04 – )</li>
+            <li><a href="https://www.anlp.jp/guide/editors.html">ANLP</a> Editorial Committee (2025/04 – )</li>
+            <li><a href="https://www.ai-gakkai.or.jp/event/ai-seminar/planningboard_2023/">JSAI</a> Planning Committee (2024/05 – )</li>
+            <li><a href="https://inlg2024.github.io/">INLG 2024</a> Local Organizer Sponsor Chair (2024)</li>
+            <li><a href="https://www.anlp.jp/nlp2024/">NLP 2024</a> Executive Committee (2024)</li>
+            <li><a href="https://2023.aclweb.org/">ACL 2023</a> Visa Assistance Team (2023)</li>
+            <li><a href="https://nlp-colloquium-jp.github.io/">NLP Colloquium</a> Organizer (2021/06 – ) <a href="https://twitter.com/nlp_colloquium" class="social" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a> <a href="https://www.youtube.com/channel/UCHMmZqchxs-kiBEEyoIUkNw" class="icon brands fa-youtube" target="_blank" rel="noopener" aria-label="YouTube"></a></li>
+            <li><a href="https://sites.google.com/view/nlp-phd">NLP Study Group for Doctoral Students</a> Organizer (2020/12 – 2023/03)</li>
+            <li><a href="https://yans.anlp.jp/">YANS</a> Committee (2020/03 – 2022/03)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Others -->
+      <section id="other" aria-labelledby="other-title">
+        <div class="container">
+          <h3 id="other-title">Others</h3>
+
+          <div class="col-3" style="font-weight:700">Scholarships and Grants‑in‑Aid</div>
+          <div class="col-9">
+            <ul>
+              <li><strong>Research Fellowship for Young Scientists</strong>, JSPS — 4,800,000 JPY / approx. 45,000 USD per year (2021/04 – 2023/03). The most prestigious fellowship for Ph.D. students in Japan [Acceptance Rate &lt; 20%].</li>
+              <li><strong>Research Grant for JSPS Fellows</strong> (Grant No. 21J13602) — 1,500,000 JPY / approx. 13,500 USD (2021/04 – 2023/03).</li>
+              <li><strong><a href="https://nips.cc/">NeurIPS 2019</a> Participation Support</strong>, <a href="https://www.ai-gakkai.or.jp/en/">JSAI</a> — Full support of travel expenses and registration fees (2019/12).</li>
+              <li><strong><a href="https://www.titech.ac.jp/english/enrolled/tuition/tsubame_scholarship.html">Tokyo Tech Tsubame Scholarship for Doctoral Students</a></strong> — 480,000 JPY / approx. 3,200 USD per year (2020/04 – 2021/03).</li>
+            </ul>
+          </div>
+
+          <div class="col-3" style="font-weight:700">Awards</div>
+          <div class="col-9">
+            <ul>
+              <li><strong>Young Researcher’s Encouragement Award</strong>, NLP 2024 (18 / 427 papers) <a href="https://www.anlp.jp/nlp2024/award.html" class="icon solid fa-globe" target="_blank" rel="noopener" aria-label="Award page"></a></li>
+              <li><strong>Committee Special Award</strong>, NLP 2022 (16 / 365 papers) <a href="https://www.anlp.jp/nlp2022/award.html" class="icon solid fa-globe" target="_blank" rel="noopener" aria-label="Award page"></a></li>
+              <li><strong>Nomination Award</strong>, 2021 Microsoft Research Asia Fellowship <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/articles/eleven-phd-students-are-awarded-the-2021-microsoft-research-asia-fellowship-award/" class="icon solid fa-globe" target="_blank" rel="noopener" aria-label="MSRA article"></a></li>
+            </ul>
+          </div>
+
+          <div class="col-3" style="font-weight:700">Teaching Assistant &amp; Mentoring</div>
+          <div class="col-9">
+            <ul>
+              <li>
+                <strong>Mentor, <a href="https://mbzuai.ac.ae/ugrip/">UGRIP program</a></strong>, MBZUAI (2025)
+                <ul>
+                  <li>Exploring Jailbreak Attack Transferability Between Speech Language Models (Best Presentation Award)</li>
+                  <li>Rethinking Tokenization and Embedding in Language Models</li>
+                </ul>
+              </li>
+              <li><strong>Teaching Assistant, Machine Learning</strong>, Tokyo Institute of Technology (2020 4Q)</li>
+              <li><strong>Teaching Assistant, Machine Learning</strong>, Tokyo Institute of Technology (2021 4Q)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <section id="footer" aria-label="Site footer">
+      <div class="container">
+        <ul class="copyright">
+          <li>&copy; <span id="year"></span> Ayana Niwa. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net" target="_blank" rel="noopener">HTML5 UP</a></li>
         </ul>
+      </div>
+    </section>
+  </div>
 
-    	</nav>
-<!--				<footer>-->
-<!--					<ul class="icons">-->
-<!--						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>-->
-<!--						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>-->
-<!--						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
-<!--						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>-->
-<!--						<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>-->
-<!--					</ul>-->
-<!--				</footer>-->
-			</section>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js" defer></script>
+  <script src="assets/js/jquery.scrollzer.min.js" defer></script>
+  <script src="assets/js/jquery.scrolly.min.js" defer></script>
+  <script src="assets/js/skel.min.js" defer></script>
+  <script src="assets/js/util.js" defer></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="assets/js/main.js" defer></script>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-  <div id="main">
-
-        <!-- One -->
-        <section id="one">
-            <div class="container">
-                <header class="major">
-                    <h2>Ayana Niwa</h2>
-                    <h3>Postdoctoral Researcher at MBZUAI<h3>
-                </header>
-
-                <p>My CV can be found <a href="files/cv_latest.pdf">here</a> (last updated: Oct. 16, 2024).</p>
-            </div>
-        </section>
-
-        <!-- Two -->
-        <section id="two">
-            <div class="container">
-                <h3>Work Experience</h3>
-                <div class="custom-list">
-                  <div class="item">
-                    <div class="year">2025/05 - </div>
-                    <div class="company">
-                      <span style="font-weight: bold">
-                        <a href="https://www.riken.jp/en/research/labs/aip/goalorient_tech/nat_lang_understand/">NLU Team</a>,
-                        <a href="https://www.riken.jp/en/research/labs/aip/">RIKEN Center for Advanced Intelligence Project</a>
-                      </span><br />
-                      <em>Visiting Scientist</em>
-                    </div>
-                  </div>
-                  <div class="item">
-                        <div class="year">2024/10 - </div>
-                        <div class="company"><span
-                                style="font-weight: bold"><a href="https://www.mint-nlp-mbzuai.com">Kentaro Team</a>, <a href="https://mbzuai.ac.ae/">MBZUAI</a></span><br/>
-                            <em>Researcher</em></div>
-                    </div>
-                    <div class="item">
-                        <div class="year">2023/04 - 2024/09</div>
-                        <div class="company"><span
-                                style="font-weight: bold"><a href="https://megagon.ai/">Megagon Labs</a></span><br/>
-                            <em>Research Scientist</em></div>
-                    </div>
-                    <div class="item">
-                        <div class="year">2023/06 - 2024/09</div>
-                        <div class="company"><span
-                                style="font-weight: bold"><a href="https://www.nlp.c.titech.ac.jp/index.en.html">Okazaki Lab, Tokyo Institute of Technology</a></span><br/>
-                            <em>Part-time Researcher</em></div>
-                    </div>
-                    <div class="item">
-                        <div class="year">2021/04 - 2023/03</div>
-                        <div class="company"><span
-                                style="font-weight: bold"><a href="https://www.jsps.go.jp/english/e-pd/">JSPS Research Fellowships for Young Scientists (DC2)</a></span><br/>
-                            <em>JSPS Research Fellow</em></div>
-                    </div>
-                    <div class="item">
-                        <div class="year">2019/06 - 2023/03</div>
-                        <div class="company"><span style="font-weight: bold"><a
-                                href="https://megagon.ai/">Megagon Labs</a></span>
-                            <br/>
-                            <em>Research Internship</em></div>
-                    </div>
-                    <div class="item">
-                        <div class="year">2018/10 - 2023/03</div>
-                        <div class="company"><span style="font-weight: bold"><a href="https://www.cyberagent.co.jp/">CyberAgent, Inc.</a> </span><br/>
-                            <em>Collaborative project</em></div>
-                    </div>
-                    <div class="item">
-                        <div class="year">2018/10 - 2023/03</div>
-                        <div class="company"><span style="font-weight: bold"><a href="https://www.titech.ac.jp/english">Tokyo Institute of Technology</a></span>
-                            <br/>
-                            <em>Research Assistant</em>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Three -->
-        <section id="three">
-            <div class="container">
-                <h3>Publication</h3>
-                <h5>Journal (Refereed)</h5>
-                <ul class="info">
-                    <li>
-                        <u>Ayana Niwa</u>, Sho Takase, Naoaki Okazaki.
-                        <strong>Nearest Neighbor Non-autoregressive Text Generation</strong>.
-                        <i>Journal of Information Processing</i>, 2023. <a
-                            href="https://www.jstage.jst.go.jp/article/ipsjjip/31/0/31_344/_article/-char/en/"
-                            class="icon solid fa-globe"><span
-                            class="label">URL</span></a>
-                    </li>
-                    <li>
-                        <u>Ayana Niwa</u>, Naoaki Okazaki, Kohei Wakimoto, Keisuke Nishiguchi, Masataka Mouri.
-                        <strong>Construction of a Corpus of Rhetorical Devices in Slogans and Structural Analysis of
-                            Antitheses</strong>.
-                        <i>ACM Transactions on Asian Low-Resource Language Information Processing (TALLIP)</i>, 2021. <a
-                            href="https://dl.acm.org/doi/10.1145/3465218" class="icon solid fa-globe"><span
-                            class="label">URL</span></a>
-                    </li>
-                </ul>
-                <h5>International Conference (Refereed)</h5>
-                <ul class="info">
-                    <li>
-                        <u>Ayana Niwa</u>, Masahiro Kaneko, Kentaro Inui.
-                        <strong>Rectifying Belief Space via Unlearning to Harness LLMs' Reasoning</strong>.
-                        <i>ACL2025 Findings</i>, 2025. <a href="https://arxiv.org/abs/2502.20620" class="icon solid fa-globe"><span
-                            class="label">URL</span></a>
-                    </li>
-                    <li>
-                        <u>Ayana Niwa</u>, Hayate Iso.
-                        <strong>AmbigNLG: Addressing Task Ambiguity in Instruction for NLG</strong>.
-                        <i>Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing  (EMNLP)</i>, 2024.
-                    </li>
-                    <li>
-                        Masahiro Kaneko, Sho Takase, <u>Ayana Niwa</u>, Naoaki Okazaki.
-                        <strong>Interpretability for Language Learners Using Example-Based Grammatical Error
-                            Correction</strong>.
-                        <i>Proceedings of the 60th Annual Conference of the Association for Computational Linguistics
-                            (ACL)</i>, 2022. <a href="https://aclanthology.org/2022.acl-long.496/"
-                                                class="icon solid fa-globe"><span
-                            class="label">URL</span></a>
-                    </li>
-                    <li>
-                        <u>Ayana Niwa</u>, Keisuke Nishiguchi, Naoaki Okazaki.
-                        <strong>Predicting Antonyms in Context using BERT</strong>.
-                        <i>Proceedings of the 14th International Conference on Natural Language Generation (INLG2021)
-                        </i>, 2021. <a href="https://aclanthology.org/2021.inlg-1.6/" class="icon solid fa-globe"><span
-                            class="label">URL</span></a>
-                    </li>
-                </ul>
-                <h5>Article</h5>
-                <ul class="info">
-                    <li>
-                        <u>Ayana Niwa</u>, Sho Yokoi, Junya Takayama, Itsumi Saito.
-                        <strong>NLP Colloquium</strong>.
-                        <i>Journal of Natural Language Processing</i>, 2024. <a
-                            href="https://www.jstage.jst.go.jp/article/jnlp/31/1/31_300/_article/-char/en" class="icon solid fa-file-pdf-o"><span
-                            class="label">Paper</span></a>
-                    </li>
-                </ul>
-                <h5>Domestic Conference and Symposium (Unrefereed)</h5>
-                <ul class="info">
-                    <li>
-                        <u>Ayana Niwa</u>, Hayate Iso.
-                        <strong>Addressing Ambiguity in Instruction for NLG. </strong>
-                        <i>The 30th Annual Meeting of the Association of Natural Language Processing (NLP2024)</i>,
-                        Hyogo, Japan.
-                        (in Japanese) <a
-                            href="https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/A7-6.pdf"
-                            class="icon solid fa-file-pdf-o"><span
-                            class="label">Paper</span></a>
-                    </li>
-                    <li>
-                        <u>Ayana Niwa</u>, Naoaki Okazaki.
-                        <strong> An Investigation of Effectiveness of the Nearest Neighbor Distribution in T5
-                            Model</strong>.
-                        <i>The 29th Annual Meeting of the Association for Natural Language Processing
-                            (NLP2023)</i>, Okinawa, March 2023. (in Japanese) <a
-                            href="https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/P12-6.pdf"
-                            class="icon solid fa-file-pdf-o"><span class="label">Paper</span></a>
-                    </li>
-                    <li>
-                        Daisuke Taniguchi, Kohei Wakimoto, <u>Ayana Niwa</u>, Naoaki Okazaki.
-                        <strong>An Investigation of the Directional Dependency of Text Generation in Large Language
-                            Models</strong>.
-                        <i>The 29th Annual Meeting of the Association for Natural Language Processing
-                            (NLP2023)</i>, Okinawa, March 2023. (in Japanese) <a
-                            href="https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/H9-1.pdf"
-                            class="icon solid fa-file-pdf-o"><span
-                            class="label">Paper</span></a>
-                    </li>
-                    <li>
-                        Daisuke Taniguchi, Kohei Wakimoto, Kazuya Kuroda, Shunyo Kawamoto, Keisuke Nishiguchi, <u>Ayana
-                        Niwa</u>, Naoaki Okazaki.
-                        <strong>Advertisement text creation support using product reviews and features</strong>.
-                        <i>The 36th Annual Conference of the Japanese Society for Artificial Intelligence (JSAI2023)</i>,
-                        Online, June 2023. (in Japanese) <a
-                            href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2022/0/JSAI2022_3Yin207/_article/-char/ja/"
-                            class="icon solid fa-globe"><span
-                            class="label">Paper</span></a>
-                    </li>
-                    <li>
-                        <u>Ayana Niwa</u>, Sho Takase, Naoaki Okazaki.
-                        <strong> Non-autoregressive Generation using the Nearest Neighbor</strong>.
-                        <i>The 28th Annual Meeting of the Association for Natural Language Processing
-                            (NLP2022)</i>, online, March 2022. (in Japanese) <a
-                            href="https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/C6-3.pdf"
-                            class="icon solid fa-file-pdf-o"><span
-                            class="label">Paper</span></a>
-                    </li>
-                    <li>
-                        Ryogo Ishikawa, <u>Ayana Niwa</u>, Mizuki Sakae, Naoaki Okazaki.
-                        <strong>Robust Dependency Parsing for the Omission of a Post-positional Particle using Pseudo
-                            Training Data</strong>.
-                        <i>The 28th Annual Meeting of the Association for Natural Language Processing
-                            (NLP2022)</i>, online, March 2022. (in Japanese) <a
-                            href="https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/B7-1.pdf"
-                            class="icon solid fa-file-pdf-o"><span
-                            class="label">Paper</span></a>
-                    </li>
-                    <li>
-                        <u>Ayana Niwa</u>, Hiroshi Matsuda.
-                        <strong>A Study for Sentiment Analysis Accepting the Diverse of Emotion
-                            Sensitivities</strong>.
-                        <i>The 35th Annual Conference of the Japanese Society for Artificial
-                            Intelligence (JSAI2021)</i>, online, June 2021. (in Japanese) <a
-                            href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2021/0/JSAI2021_2Yin506/_article/-char/ja/"
-                            class="icon solid fa-file-pdf-o"><span
-                            class="label">Paper</span></a>
-                    </li>
-                    <li>
-                        <u>Ayana Niwa</u>, Keisuke Nishiguchi, Naoaki Okazaki.
-                        <strong>Antonym Filling Task in Context using BERT</strong>.
-                        <i>The 27th Annual Meeting of the Association for Natural Language Processing
-                            (NLP2021)</i>, online, March 2021. (in Japanese) <a
-                            href="https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/C9-1.pdf"
-                            class="icon solid fa-file-pdf-o"><span
-                            class="label">Paper</span></a>
-                    </li>
-                    <li>
-                        <u>Natsumi Nobori</u>, Tatsuya Hiraoka, <u>Ayana Niwa</u>, Keisuke Nishiguchi, Naoaki Okazaki.
-                        <strong>Advertisement Slogan Generation Considering Company Information</strong>.
-                        <i>The 27th Annual Meeting of the Association for Natural Language Processing
-                            (NLP2021)</i>, online, March 2021. (in Japanese) <a
-                            href="https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/B3-3.pdf"
-                            class="icon solid fa-file-pdf-o"><span
-                            class="label">Paper</span></a>
-                    </li>
-                    <li>
-                        <u>Ayana Niwa</u>, Keisuke Nishiguchi, Naoaki Okazaki.
-                        <strong>Advertising Slogan Generation with Antitheses by using Masked Language
-                            Models</strong>.
-                        <i>The 15th Symposium of Young Researcher Association for NLP Studies (YANS2020)</i>,
-                        online, September 2020. (in Japanese)
-                    </li>
-                    <li>
-                        <u>Natsumi Nobori</u>, Tatsuya Hiraoka, <u>Ayana Niwa</u>, Keisuke Nishiguchi, Naoaki Okazaki.
-                        <strong>Advertisement Slogan Generation Considering Company Information</strong>.
-                        <i>The 15th Symposium of Young Researcher Association for NLP Studies (YANS2020)</i>,
-                        online, September 2020. (in Japanese)
-                    </li>
-                    <li>
-                        <u>Ayana Niwa</u>, Kohei Wakimoto, Keisuke Nishiguchi, Masataka Mouri, Naoaki Okazaki.
-                        <strong>Structural Analysis of Antitheses in Slogan using Span Candidate Refinement with
-                            Word Correspondence</strong>.
-                        <i>The 34th Annual Conference of the Japanese Society for Artificial
-                            Intelligence (JSAI2020)</i>, <s>Kumamoto</s> online, June 2020. (in Japanese)
-                        <a href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2020/0/JSAI2020_1E5GS901/_article/-char/ja"
-                           class="icon solid fa-globe"><span
-                                class="label">URL</span></a>
-                    </li>
-                    <li>
-                        <u>Ayana Niwa</u>, Kohei Wakimoto, Keisuke Nishiguchi, Masataka Mouri, Naoaki Okazaki.
-                        <strong>Structural Analysis of Antitheses in Advertising Slogans</strong>.
-                        <i>The 26th Annual Meeting of the Association for Natural Language Processing
-                            (NLP2020)</i>, <s>Ibaraki</s> online, March 2020. (in Japanese)
-                        <a href="https://www.anlp.jp/proceedings/annual_meeting/2020/pdf_dir/D3-4.pdf"
-                           class="icon solid fa-file-pdf-o"><span
-                                class="label">Paper</span></a>
-
-                    </li>
-                    <li>
-                        <u>Ayana Niwa</u>, Naoaki Okazaki, Keisuke Nishiguchi, Chihiro Kameyama, Masataka Mouri.
-                        <strong>A Study Toward Automatic Advertising Slogan Generation Considering Rhetorical
-                            Devices</strong>.
-                        <i>The 14th Symposium of Young Researcher Association for NLP Studies (YANS2019)</i>,
-                        Hokkaido, August 2019. (in Japanese)
-                        <a href="https://drive.google.com/file/d/1XYbNdfoMwb0DfTVQNvDCa4Q4HTI4k1ow/view"
-                           class="icon solid fa-file-pdf-o"><span
-                                class="label">Poster</span></a>
-
-                    </li>
-                    <li>
-                        <u>Ayana Niwa</u>, Naoaki Okazaki, Keisuke Nishiguchi, Chihiro Kameyama, Masataka Mouri.
-                        <strong>Analysis Toward Automatic Generation of Advertising Slogans</strong>.
-                        <i>The 25th Annual Meeting of the Association for Natural Language Processing
-                            (NLP2019)</i>, Aichi, March 2019. (in Japanese)
-                        <a href="https://www.anlp.jp/proceedings/annual_meeting/2019/pdf_dir/P3-12.pdf"
-                           class="icon solid fa-file-pdf-o"><span
-                                class="label">Paper</span></a>
-                    </li>
-                </ul>
-
-
-                <!--                <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non.-->
-                <!--                    Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>-->
-                <!--                <div class="features">-->
-                <!--                    <article>-->
-                <!--                        <a href="#" class="image"><img src="images/pic01.jpg" alt=""/></a>-->
-                <!--                        <div class="inner">-->
-                <!--                            <h4>Possibly broke spacetime</h4>-->
-                <!--                            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus-->
-                <!--                                integer adipiscing ornare amet.</p>-->
-                <!--                        </div>-->
-                <!--                    </article>-->
-                <!--                    <article>-->
-                <!--                        <a href="#" class="image"><img src="images/pic02.jpg" alt=""/></a>-->
-                <!--                        <div class="inner">-->
-                <!--                            <h4>Terraformed a small moon</h4>-->
-                <!--                            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus-->
-                <!--                                integer adipiscing ornare amet.</p>-->
-                <!--                        </div>-->
-                <!--                    </article>-->
-                <!--                    <article>-->
-                <!--                        <a href="#" class="image"><img src="images/pic03.jpg" alt=""/></a>-->
-                <!--                        <div class="inner">-->
-                <!--                            <h4>Snapped dark matter in the wild</h4>-->
-                <!--                            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus-->
-                <!--                                integer adipiscing ornare amet.</p>-->
-                <!--                        </div>-->
-                <!--                    </article>-->
-                <!--                </div>-->
-            </div>
-        </section>
-
-        <!-- Four -->
-        <section id="four">
-            <div class="container">
-                <h3>Education</h3>
-                <div class="item">
-                    <div class="year">2020/04 - 2023/03</div>
-                    <div class="company">Ph.D. in Engineering, Tokyo Institute of Technology<br/>
-                        <em> Adviser: <a href="http://www.chokkan.org/index.en.html"> Prof. Naoaki
-                            Okazaki</a></em></div>
-                </div>
-                <div class="item">
-                    <div class="year">2018/04 - 2020/03</div>
-                    <div class="company">Master of Engineering, Tokyo Institute of Technology<br/>
-                        <em> Adviser: <a href="http://www.chokkan.org/index.en.html"> Prof. Naoaki
-                            Okazaki</a></em></div>
-                </div>
-                <div class="item">
-                    <div class="year">2014/04 - 2018/03</div>
-                    <div class="company">Bachelor of Science and Technology, Sophia University, Japan<br/>
-                        <em> Adviser: <a href="http://pweb.cc.sophia.ac.jp/irohara/index-e.html">Prof.
-                            Takashi Irohara</a></em></div>
-                </div>
-
-            </div>
-        </section>
-        <!-- Four -->
-        <section id="five">
-            <div class="container">
-                <h3>Talk</h3>
-                <ul>
-                    <li>"A Quick Overview to Unlock the Potential of LLMs through Prompt Engineering.". Guest talk at <a
-                            href="https://tokyoai.connpass.com/event/326265/">Advanced Natural Language Processing (NLP)</a> by <a
-                            href="https://drive.google.com/drive/folders/10GmxjIEBugB8ymZ0qDBINL76tCWiYgRM">Tokyo AI.</a> (2024/08)
-                        <a href="https://speakerdeck.com/ayaniwa/a-quick-overview-to-unlock-the-potential-of-llms-through-prompt-engineering"
-                           class="icon brands fa-speaker-deck"><span
-                                class="label">SpeakerDeck</span></a>
-                    </li>
-                    <li>"The Frontiers of Mathematics, Information, and AI". Guest talk at <a
-                            href="https://aip.riken.jp/event-list/surijohoai-female-students-seminar/?lang=ja">online
-                        seminar for middle and high-school female students</a> by <a
-                            href="https://www.riken.jp/en/research/labs/aip/index.html">AIP RIKEN.</a> (2022/11)
-                        <a href="https://www.youtube.com/watch?v=63nROMDfLl4&list=PLaEuBnOE7AzMGX9JsWsICQXEjr1sFnJIm&index=6"
-                           class="icon brands fa-youtube"><span
-                                class="label">YOUTUBE</span></a>
-                    </li>
-                    <li>"Career Path as a Female Researcher". Guest talk at <a
-                            href="https://neuripsmeetup.jp/2021/">NeurIPS Meetup Japan 2021, Women in Machine Learning
-                        (WiML)</a>. ( 2021/12 )
-                    </li>
-                    <li>"Derivation and Use of Templates in Natural Language Generation". Invited talk at
-                        <a
-                                href="https://www.ai-gakkai.or.jp/sigconf2021/2021siginvitedtalks/">Special Interest
-                            Group on Fundamental Problems in Artificial Intelligence (SIG-FPAI).</a> (2021/11)
-                        <a href="https://www.jstage.jst.go.jp/article/jsaifpai/118/0/118_03/_article/-char/ja/"
-                           class="icon solid fa-book-open"><span
-                                class="label">INFO</span></a>
-
-                    </li>
-                    <li> "Trends in Natural Language Processing at NeurIPS 2019". Invited talk at <a
-                            href="https://www.ai-gakkai.or.jp/no78_jsai_seminar/">The 78th AI seminar by JSAI.</a>
-                        (2020/03) <a
-                                href="https://speakerdeck.com/ayaniwa/trends-in-natural-language-processing-at-neurips-2019"
-                                class="icon brands fa-speaker-deck"><span
-                                class="label">SpeakerDeck</span></a></li>
-                    <!--                    <ul>-->
-                    <!--                        <li>-->
-                    <!--                            Offline presentation was cancelled due to COVID-19.-->
-                    <!--                        </li>-->
-                    <!--                        <li>-->
-                    <!--                            <a href="https://speakerdeck.com/ayaniwa/trends-in-natural-language-processing-at-neurips-2019"-->
-                    <!--                                  class="button small">SLIDES</a>-->
-                    <!--&lt;!&ndash;                            <br>→ Some of the contents have been revised and re-published as a personal version.&ndash;&gt;-->
-                    <!--&lt;!&ndash;                            <a&ndash;&gt;-->
-                    <!--&lt;!&ndash;                                    href="https://speakerdeck.com/ayaniwa/trends-in-natural-language-processing-at-neurips-2019"&ndash;&gt;-->
-                    <!--&lt;!&ndash;                                    class="button small">SLIDE</a>&ndash;&gt;-->
-                    <!--                        </li>-->
-                    <!--                    </ul>-->
-                    <li>"A Smart Computer that Understands Language". A visiting lecture at Jissen Gakuen Senior High
-                        School. (2019/11 )
-                    </li>
-                    <li>"Natural Language Processing". A visiting lecture at Denenchofu High School. (2019/06)</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="six">
-            <div class="container">
-                <h3>Committee</h3>
-                <ul>
-                    <li><a href="https://sites.google.com/sig-nl.ipsj.or.jp/sig-nl/home"> Special Interest Group on Natural Language Processing (SIG-NL)</a> Committee (2025/04 -)</span></li>
-                    <li><a href="https://www.anlp.jp/guide/editors.html"> The Association for Natural Language Processing (ANLP)</a> Editorial Committee (2025/04 -)</span></li>
-                    <li><a href="https://www.ai-gakkai.or.jp/event/ai-seminar/planningboard_2023/"> The Japanese Society for Artificial Intelligence (JSAI)</a> Planning committee (2024/05 -)</span></li>
-                    <li><a href="https://inlg2024.github.io/"> 17th International Natural Language Generation Conference (INLG2024)</a> Local Organizer Sponsor Chair (2024)</span></li>
-                    <li><a href="https://www.anlp.jp/nlp2024/"> 30th Annual Meeting of the Language Processing Society of Japan (NLP2024)</a> Executive Committee (2024)</span></li>
-                    <li><a href="https://2023.aclweb.org/"> 61st Conference of the the Association for Computational Linguistics (ACL2023)</a> Visa Assistance Team (2023) </span></li>
-                    <li><a href="https://nlp-colloquium-jp.github.io/">NLP Colloquium</a> Organizer (2021/06 - ) <a href="https://twitter.com/nlp_colloquium" class="icon brands fa-twitter"><span class="label">Twitter</span></a> <a href="https://www.youtube.com/channel/UCHMmZqchxs-kiBEEyoIUkNw" class="icon brands fa-youtube"><span class="label">Youtube</span></a></span></li>
-                    <li><a href="https://sites.google.com/view/nlp-phd"> NLP Study Group for Doctoral Students</a> Organizer (2020/12 - 2023/03)</span></li>
-                    <li><a href="https://yans.anlp.jp/">Young Researcher Association for NLP Studies (YANS)</a> Commitee (2020/03 - 2022/03)</span></li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="seven">
-            <div class="container">
-                <h3>Others</h3>
-                <div class="col-3" style="font-weight: bold">Scholarship and Grants-in-Aid</div>
-                <div class="col-9">
-                    <ul>
-                        <li><span style="font-weight: bold">Research Fellowship for Young Scientists</span> by Japan Society for the Promotion of Science
-                            (JSPS)<br>
-                            4,800,000 JPY / APPROX 45,000 USD per year (2021/04 - 2023/03)<br>
-                            The most prestigious fellowship for Ph.D. students in Japan [Acceptance Rate < 20%]
-                        </li>
-                        <li>
-                            <span style="font-weight: bold">Research Grant for JSPS Fellows</span> (Grant Number: 21J13602)<br>
-                            1,500,000 JPY / APPROX 13,500 USD (2021/04 - 2023/03)
-                        </li>
-                        <li><span style="font-weight: bold"><a href="https://nips.cc/">NeurIPS 2019</a> Participation Support by <a
-                                href="https://www.ai-gakkai.or.jp/en/">The Japanese Society for Artificial
-                Intelligence</a></span><br>
-                            Full support of travel expense and registration fees (2019/12)
-                        </li>
-                        <li><span style="font-weight: bold"><a
-                                href="https://www.titech.ac.jp/english/enrolled/tuition/tsubame_scholarship.html">Tokyo Tech Tsubame Scholarship for Doctoral Students</a></span><br>
-                            480,000 JPY / APPROX 3,200 USD per year (2020/04 - 2021/03)
-                        </li>
-                    </ul>
-
-                </div>
-                <div class="col-3" style="font-weight: bold">Awards</div>
-                <div class="col-9">
-                    <ul>
-                        <li><span style="font-weight: bold">Young Researcher’s Encouragement Award</span>, NLP2024 (18/427 papers) <a href="https://www.anlp.jp/nlp2024/award.html" class="icon solid fa-globe"></a></li>
-                        <li><span style="font-weight: bold">Committee Special Award</span>, NLP2022 (16/365 papers) <a href="https://www.anlp.jp/nlp2022/award.html"  class="icon solid fa-globe"></a></li>
-                        <li><span style="font-weight: bold">Nomination Award</span>, 2021 Microsoft Research Asia Fellowship <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/articles/eleven-phd-students-are-awarded-the-2021-microsoft-research-asia-fellowship-award/" class="icon solid fa-globe"></a></li>
-                    </ul>
-
-                </div>
-<!--                <div class="col-3" style="font-weight: bold">Reviewer</div>-->
-<!--                <div class="col-9" style="font-weight: bold; margin-bottom: 1em">-->
-<!--                    <ul>-->
-<!--                        <li> 13th International Conference on Language Resources and Evaluation (LREC 2022)</li>-->
-<!--                    </ul>-->
-
-<!--                </div>-->
-<!--                <div class="col-3" style="font-weight: bold">Teaching Assistant</div>-->
-<!--                <div class="col-9" style="font-weight: bold; margin-bottom: 1em">-->
-<!--                    <ul>-->
-<!--                        <li> Machine Learning (2020 4Q)</li>-->
-<!--                        <li> Machine Learning (2021 4Q)</li>-->
-<!--                    </ul>-->
-
-<!--                </div>-->
-                <!--                <div class="col-3" style="font-weight: bold">Membership</div>-->
-                <!--                <div class="col-9" style="font-weight: bold">-->
-                <!--                    <ul>-->
-                <!--                        <li>-->
-                <!--                            The Association for Natural Language Processing (NLP)-->
-                <!--                        </li>-->
-                <!--                        <li>NLP Dの会</li>-->
-                <!--                    </ul>-->
-                <!--                </div>-->
-            </div>
-        </section>
-        <!-- Five -->
-        <!--
-            <section id="five">
-                <div class="container">
-                    <h3>Elements</h3>
-
-                    <section>
-                        <h4>Text</h4>
-                        <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-                        This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-                        This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-                        <hr />
-                        <header>
-                            <h4>Heading with a Subtitle</h4>
-                            <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-                        </header>
-                        <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                        <header>
-                            <h5>Heading with a Subtitle</h5>
-                            <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-                        </header>
-                        <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                        <hr />
-                        <h2>Heading Level 2</h2>
-                        <h3>Heading Level 3</h3>
-                        <h4>Heading Level 4</h4>
-                        <h5>Heading Level 5</h5>
-                        <h6>Heading Level 6</h6>
-                        <hr />
-                        <h5>Blockquote</h5>
-                        <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-                        <h5>Preformatted</h5>
-                        <pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-                    </section>
-
-                    <section>
-                        <h4>Lists</h4>
-                        <div class="row">
-                            <div class="col-6 col-12-xsmall">
-                                <h5>Unordered</h5>
-                                <ul>
-                                    <li>Dolor pulvinar etiam magna etiam.</li>
-                                    <li>Sagittis adipiscing lorem eleifend.</li>
-                                    <li>Felis enim feugiat dolore viverra.</li>
-                                </ul>
-                                <h5>Alternate</h5>
-                                <ul class="alt">
-                                    <li>Dolor pulvinar etiam magna etiam.</li>
-                                    <li>Sagittis adipiscing lorem eleifend.</li>
-                                    <li>Felis enim feugiat dolore viverra.</li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-12-xsmall">
-                                <h5>Ordered</h5>
-                                <ol>
-                                    <li>Dolor pulvinar etiam magna etiam.</li>
-                                    <li>Etiam vel felis at lorem sed viverra.</li>
-                                    <li>Felis enim feugiat dolore viverra.</li>
-                                    <li>Dolor pulvinar etiam magna etiam.</li>
-                                    <li>Etiam vel felis at lorem sed viverra.</li>
-                                    <li>Felis enim feugiat dolore viverra.</li>
-                                </ol>
-                                <h5>Icons</h5>
-                                <ul class="icons">
-                                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                                    <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                                    <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-                                    <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <h5>Actions</h5>
-                        <ul class="actions">
-                            <li><a href="#" class="button primary">Default</a></li>
-                            <li><a href="#" class="button">Default</a></li>
-                            <li><a href="#" class="button alt">Default</a></li>
-                        </ul>
-                        <ul class="actions small">
-                            <li><a href="#" class="button primary small">Small</a></li>
-                            <li><a href="#" class="button small">Small</a></li>
-                            <li><a href="#" class="button alt small">Small</a></li>
-                        </ul>
-                        <div class="row">
-                            <div class="col-3 col-6-medium col-12-xsmall">
-                                <ul class="actions stacked">
-                                    <li><a href="#" class="button primary">Default</a></li>
-                                    <li><a href="#" class="button">Default</a></li>
-                                    <li><a href="#" class="button alt">Default</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-3 col-6 col-12-xsmall">
-                                <ul class="actions stacked">
-                                    <li><a href="#" class="button primary small">Small</a></li>
-                                    <li><a href="#" class="button small">Small</a></li>
-                                    <li><a href="#" class="button alt small">Small</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-3 col-6-medium col-12-xsmall">
-                                <ul class="actions stacked">
-                                    <li><a href="#" class="button primary fit">Default</a></li>
-                                    <li><a href="#" class="button fit">Default</a></li>
-                                    <li><a href="#" class="button alt fit">Default</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-3 col-6-medium col-12-xsmall">
-                                <ul class="actions stacked">
-                                    <li><a href="#" class="button primary small fit">Small</a></li>
-                                    <li><a href="#" class="button small fit">Small</a></li>
-                                    <li><a href="#" class="button alt small fit">Small</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h4>Table</h4>
-                        <h5>Default</h5>
-                        <div class="table-wrapper">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Description</th>
-                                        <th>Price</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Item One</td>
-                                        <td>Ante turpis integer aliquet porttitor.</td>
-                                        <td>29.99</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Item Two</td>
-                                        <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                                        <td>19.99</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Item Three</td>
-                                        <td> Morbi faucibus arcu accumsan lorem.</td>
-                                        <td>29.99</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Item Four</td>
-                                        <td>Vitae integer tempus condimentum.</td>
-                                        <td>19.99</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Item Five</td>
-                                        <td>Ante turpis integer aliquet porttitor.</td>
-                                        <td>29.99</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td colspan="2"></td>
-                                        <td>100.00</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-
-                        <h5>Alternate</h5>
-                        <div class="table-wrapper">
-                            <table class="alt">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Description</th>
-                                        <th>Price</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Item One</td>
-                                        <td>Ante turpis integer aliquet porttitor.</td>
-                                        <td>29.99</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Item Two</td>
-                                        <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                                        <td>19.99</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Item Three</td>
-                                        <td> Morbi faucibus arcu accumsan lorem.</td>
-                                        <td>29.99</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Item Four</td>
-                                        <td>Vitae integer tempus condimentum.</td>
-                                        <td>19.99</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Item Five</td>
-                                        <td>Ante turpis integer aliquet porttitor.</td>
-                                        <td>29.99</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td colspan="2"></td>
-                                        <td>100.00</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h4>Buttons</h4>
-                        <ul class="actions">
-                            <li><a href="#" class="button primary">Primary</a></li>
-                            <li><a href="#" class="button">Default</a></li>
-                            <li><a href="#" class="button alt">Alternate</a></li>
-                        </ul>
-                        <ul class="actions">
-                            <li><a href="#" class="button primary large">Large</a></li>
-                            <li><a href="#" class="button">Default</a></li>
-                            <li><a href="#" class="button alt small">Small</a></li>
-                        </ul>
-                        <ul class="actions fit">
-                            <li><a href="#" class="button primary fit">Fit</a></li>
-                            <li><a href="#" class="button fit">Fit</a></li>
-                            <li><a href="#" class="button alt fit">Fit</a></li>
-                        </ul>
-                        <ul class="actions fit small">
-                            <li><a href="#" class="button primary fit small">Fit + Small</a></li>
-                            <li><a href="#" class="button fit small">Fit + Small</a></li>
-                            <li><a href="#" class="button alt fit small">Fit + Small</a></li>
-                        </ul>
-                        <ul class="actions">
-                            <li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-                            <li><a href="#" class="button icon solid fa-download">Icon</a></li>
-                            <li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
-                        </ul>
-                        <ul class="actions">
-                            <li><span class="button primary disabled">Primary</span></li>
-                            <li><span class="button disabled">Default</span></li>
-                            <li><span class="button alt disabled">Alternate</span></li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h4>Form</h4>
-                        <form method="post" action="#">
-                            <div class="row gtr-uniform">
-                                <div class="col-6 col-12-xsmall">
-                                    <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-                                </div>
-                                <div class="col-6 col-12-xsmall">
-                                    <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-                                </div>
-                                <div class="col-12">
-                                    <select name="demo-category" id="demo-category">
-                                        <option value="">- Category -</option>
-                                        <option value="1">Manufacturing</option>
-                                        <option value="1">Shipping</option>
-                                        <option value="1">Administration</option>
-                                        <option value="1">Human Resources</option>
-                                    </select>
-                                </div>
-                                <div class="col-4 col-12-medium">
-                                    <input type="radio" id="demo-priority-low" name="demo-priority" checked>
-                                    <label for="demo-priority-low">Low Priority</label>
-                                </div>
-                                <div class="col-4 col-12-medium">
-                                    <input type="radio" id="demo-priority-normal" name="demo-priority">
-                                    <label for="demo-priority-normal">Normal Priority</label>
-                                </div>
-                                <div class="col-4 col-12-medium">
-                                    <input type="radio" id="demo-priority-high" name="demo-priority">
-                                    <label for="demo-priority-high">High Priority</label>
-                                </div>
-                                <div class="col-6 col-12-medium">
-                                    <input type="checkbox" id="demo-copy" name="demo-copy">
-                                    <label for="demo-copy">Email me a copy of this message</label>
-                                </div>
-                                <div class="col-6 col-12-medium">
-                                    <input type="checkbox" id="demo-human" name="demo-human" checked>
-                                    <label for="demo-human">I am a human and not a robot</label>
-                                </div>
-                                <div class="col-12">
-                                    <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <ul class="actions">
-                                        <li><input type="submit" value="Send Message" /></li>
-                                        <li><input type="reset" value="Reset" class="alt" /></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </form>
-                    </section>
-
-                    <section>
-                        <h4>Image</h4>
-                        <h5>Fit</h5>
-                        <span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-                        <div class="box alt">
-                            <div class="row gtr-50 gtr-uniform">
-                                <div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-                                <div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-                                <div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-                                <div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-                                <div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-                                <div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-                                <div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-                                <div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-                                <div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-                            </div>
-                        </div>
-                        <h5>Left &amp; Right</h5>
-                        <p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-                        <p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-                    </section>
-
-                </div>
-            </section>
-        -->
-
-    </div>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Ayana Niwa. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-<script>
-    document.getElementById('copy-email').addEventListener('click', function(event) {
-        // テキストエリアを動的に作成して値を設定
-        var textArea = document.createElement("textarea");
-        textArea.value = 'ayana.niwa@mbzuai.ac.ae';  // コピーしたいメールアドレス
-        document.body.appendChild(textArea);
-
-        // テキストエリアの内容を選択し、クリップボードにコピー
-        textArea.select();
-        document.execCommand('copy');
-
-        // 使用後のテキストエリアを削除
-        document.body.removeChild(textArea);
-
-        // コピー通知メッセージを表示し、2秒後に非表示にする
-        var copyMessage = document.getElementById('copy-message');
-        copyMessage.style.display = 'block';
-        setTimeout(function() {
-            copyMessage.style.display = 'none';
-        }, 2000);
-
-        // クリックイベントのデフォルトの動作を阻止
-        event.preventDefault();
+  <script>
+    // Current year in footer
+    document.addEventListener('DOMContentLoaded', function () {
+      var y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
     });
-</script>
 
-	</body>
+    // Copy email button with modern Clipboard API + fallback
+    (function () {
+      var btn = document.getElementById('copy-email');
+      var msg = document.getElementById('copy-message');
+      var email = 'ayana.niwa@mbzuai.ac.ae';
+      if (!btn) return;
+
+      function announce(text) {
+        if (!msg) return;
+        msg.classList.remove('visually-hidden');
+        msg.textContent = text;
+        setTimeout(function(){ msg.classList.add('visually-hidden'); }, 1800);
+      }
+
+      btn.addEventListener('click', function () {
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(email)
+            .then(function () { announce('Copied!'); })
+            .catch(function () { fallback(); });
+        } else {
+          fallback();
+        }
+      });
+
+      function fallback() {
+        var ta = document.createElement('textarea');
+        ta.value = email;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'absolute';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); announce('Copied!'); }
+        catch (e) { window.prompt('Copy email address:', email); }
+        document.body.removeChild(ta);
+      }
+    })();
+  </script>
+
+  <style>
+    /* Small a11y helpers without touching theme */
+    .skip-link { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
+    .skip-link:focus { position:static; width:auto; height:auto; margin:1rem; padding:.5rem .75rem; background:#fff; border:1px solid #ddd; border-radius:.25rem; }
+    .visually-hidden { position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px, 1px, 1px, 1px); white-space:nowrap; }
+    #copy-email { border:0; background:none; cursor:pointer; }
+  </style>
+</body>
 </html>
