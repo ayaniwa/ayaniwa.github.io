@@ -335,3 +335,39 @@ html[data-theme="light"] {
   --brand-2:#ec4899;
 }
 
+
+.newslist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.newslist li {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+  align-items: flex-start;
+}
+
+.news-date {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  color: var(--muted-color, #888);
+  min-width: 4.5rem; /* 2025/11 くらいを想定 */
+}
+
+.news-text {
+  flex: 1;
+}
+
+/* New! バッジを付けたい場合（任意） */
+.newslist li.new .news-text::before {
+  content: "NEW";
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  margin-right: 0.4rem;
+  opacity: 0.8;
+}
